@@ -136,6 +136,7 @@ radius = 11.0
 [node name="Apple" type="Area2D"]
 scale = Vector2(2.5, 2.5)
 script = ExtResource("1_h77mo")
+point = 1
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
