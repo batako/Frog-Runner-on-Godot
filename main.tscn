@@ -611,3 +611,7 @@ layer_0/tile_data = PackedInt32Array(917503, 393216, 0, 851968, 393216, 0, 85196
 [node name="NinjaFrog" parent="." instance=ExtResource("3_vl1jc")]
 position = Vector2(224, 560)
 scale = Vector2(3, 3)
+
+[node name="Camera2D" type="Camera2D" parent="NinjaFrog"]
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
