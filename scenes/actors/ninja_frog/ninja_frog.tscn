@@ -1,5 +1,6 @@
-[gd_scene load_steps=38 format=3 uid="uid://64ilm2o3pp43"]
+[gd_scene load_steps=39 format=3 uid="uid://64ilm2o3pp43"]
 
+[ext_resource type="Script" path="res://scenes/actors/ninja_frog/ninja_frog.gd" id="1_7gg0o"]
 [ext_resource type="Texture2D" uid="uid://yvknfsq4lhao" path="res://assets/images/ninja_frog/hit.png" id="1_vlp82"]
 [ext_resource type="Texture2D" uid="uid://c8oqik0cv2rpu" path="res://assets/images/ninja_frog/idle.png" id="2_a0ska"]
 [ext_resource type="Texture2D" uid="uid://de3qa4vj0yeds" path="res://assets/images/ninja_frog/run.png" id="2_cq8l3"]
@@ -249,6 +250,7 @@ animations = [{
 size = Vector2(20, 26)
 
 [node name="NinjaFrog" type="CharacterBody2D"]
+script = ExtResource("1_7gg0o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_d3xu3")
