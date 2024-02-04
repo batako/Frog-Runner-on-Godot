@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://uwcbck7v8xud"]
+[gd_scene load_steps=7 format=3 uid="uid://uwcbck7v8xud"]
 
 [ext_resource type="Texture2D" uid="uid://dfx003jau2kmp" path="res://assets/images/background/green.png" id="1_ou3ko"]
 [ext_resource type="Texture2D" uid="uid://b5x2ovo8pn1ri" path="res://assets/images/terrain/terrain.png" id="2_gsixr"]
 [ext_resource type="PackedScene" uid="uid://64ilm2o3pp43" path="res://scenes/actors/ninja_frog/ninja_frog.tscn" id="3_vl1jc"]
+[ext_resource type="PackedScene" uid="uid://b426gumqirii0" path="res://scenes/items/fruits/apple.tscn" id="4_2ih2l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rvkn0"]
 texture = ExtResource("2_gsixr")
@@ -610,8 +611,27 @@ layer_0/tile_data = PackedInt32Array(917503, 393216, 0, 851968, 393216, 0, 85196
 
 [node name="NinjaFrog" parent="." instance=ExtResource("3_vl1jc")]
 position = Vector2(224, 560)
-scale = Vector2(3, 3)
 
 [node name="Camera2D" type="Camera2D" parent="NinjaFrog"]
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
+
+[node name="Items" type="Node" parent="."]
+
+[node name="Apple1" parent="Items" instance=ExtResource("4_2ih2l")]
+position = Vector2(405, 539)
+
+[node name="Apple2" parent="Items" instance=ExtResource("4_2ih2l")]
+position = Vector2(601, 489)
+
+[node name="Apple3" parent="Items" instance=ExtResource("4_2ih2l")]
+position = Vector2(842, 491)
+
+[node name="Apple4" parent="Items" instance=ExtResource("4_2ih2l")]
+position = Vector2(644, 263)
+
+[node name="Apple5" parent="Items" instance=ExtResource("4_2ih2l")]
+position = Vector2(392, 265)
+
+[node name="Apple6" parent="Items" instance=ExtResource("4_2ih2l")]
+position = Vector2(66, 209)

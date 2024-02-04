@@ -1,0 +1,145 @@
+[gd_scene load_steps=21 format=3 uid="uid://b426gumqirii0"]
+
+[ext_resource type="Texture2D" uid="uid://b38uvrgy3eonn" path="res://assets/images/items/fruits/apple.png" id="1_6jf0g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66b6o"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyar2"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yerq"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpme2"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxj8b"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26inw"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uctwn"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmq8g"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dcjy"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bu8ju"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u524b"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cfua"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrax7"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0x0fd"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7qco"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hp5lu"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1cf3i"]
+atlas = ExtResource("1_6jf0g")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y8orf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66b6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyar2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yerq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpme2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxj8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26inw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uctwn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmq8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dcjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bu8ju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u524b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cfua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrax7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0x0fd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7qco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hp5lu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1cf3i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ssp5"]
+radius = 11.0
+
+[node name="Apple" type="Area2D"]
+scale = Vector2(2.5, 2.5)
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_y8orf")
+autoplay = "default"
+frame_progress = 0.656919
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5ssp5")
