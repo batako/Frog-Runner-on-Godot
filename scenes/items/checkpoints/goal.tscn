@@ -1,6 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://c8jcj7hrbffxv"]
+[gd_scene load_steps=14 format=3 uid="uid://c8jcj7hrbffxv"]
 
 [ext_resource type="Texture2D" uid="uid://bqpja3bydlqju" path="res://assets/images/items/checkpoints/goal.png" id="1_m4dd8"]
+[ext_resource type="Script" path="res://scenes/items/checkpoints/goal.gd" id="1_nryn1"]
+[ext_resource type="PackedScene" uid="uid://cygxxng5hn5mk" path="res://main_manu.tscn" id="2_k6sdx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1im8"]
 atlas = ExtResource("1_m4dd8")
@@ -71,11 +73,13 @@ size = Vector2(44.8, 44.8)
 
 [node name="Goal" type="Area2D"]
 scale = Vector2(2.5, 2.5)
+script = ExtResource("1_nryn1")
+MainMenuScene = ExtResource("2_k6sdx")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rdnfv")
 autoplay = "default"
-frame_progress = 0.0966609
+frame_progress = 0.953623
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.00136e-06, 9.6)
