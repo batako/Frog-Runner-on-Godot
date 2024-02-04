@@ -79,7 +79,7 @@ MainMenuScene = ExtResource("2_k6sdx")
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rdnfv")
 autoplay = "default"
-frame_progress = 0.953623
+frame_progress = 0.980043
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.00136e-06, 9.6)
