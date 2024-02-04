@@ -262,7 +262,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1lq6m"]
 size = Vector2(20, 26)
 
-[node name="NinjaFrog" type="CharacterBody2D"]
+[node name="NinjaFrog" type="CharacterBody2D" groups=["Player"]]
 scale = Vector2(2.5, 2.5)
 script = ExtResource("1_7gg0o")
 
