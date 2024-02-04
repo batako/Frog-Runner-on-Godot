@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://uwcbck7v8xud"]
+[gd_scene load_steps=9 format=3 uid="uid://uwcbck7v8xud"]
 
 [ext_resource type="Texture2D" uid="uid://dfx003jau2kmp" path="res://assets/images/background/green.png" id="1_ou3ko"]
 [ext_resource type="Texture2D" uid="uid://b5x2ovo8pn1ri" path="res://assets/images/terrain/terrain.png" id="2_gsixr"]
 [ext_resource type="PackedScene" uid="uid://64ilm2o3pp43" path="res://scenes/actors/ninja_frog/ninja_frog.tscn" id="3_vl1jc"]
 [ext_resource type="PackedScene" uid="uid://b426gumqirii0" path="res://scenes/items/fruits/apple.tscn" id="4_2ih2l"]
 [ext_resource type="Script" path="res://components/game_manager.gd" id="5_nywh1"]
+[ext_resource type="PackedScene" uid="uid://c8jcj7hrbffxv" path="res://scenes/items/checkpoints/goal.tscn" id="6_kww1n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rvkn0"]
 texture = ExtResource("2_gsixr")
@@ -621,37 +622,40 @@ position = Vector2(224, 560)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
-[node name="Items" type="Node" parent="."]
+[node name="Collectables" type="Node" parent="."]
 
-[node name="Apple1" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple1" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(405, 539)
 
-[node name="Apple2" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple2" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(601, 489)
 
-[node name="Apple3" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple3" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(842, 491)
 
-[node name="Apple4" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple4" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(644, 263)
 
-[node name="Apple5" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple5" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(392, 265)
 
-[node name="Apple6" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple6" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(66, 209)
 
-[node name="Apple" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple7" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(1560, 248)
 
-[node name="Apple7" parent="Items" instance=ExtResource("4_2ih2l")]
-position = Vector2(2360, 344)
-
-[node name="Apple8" parent="Items" instance=ExtResource("4_2ih2l")]
-position = Vector2(2376, 64)
-
-[node name="Apple9" parent="Items" instance=ExtResource("4_2ih2l")]
+[node name="Apple8" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(1800, 112)
 
-[node name="Apple" parent="." instance=ExtResource("4_2ih2l")]
+[node name="Apple9" parent="Collectables" instance=ExtResource("4_2ih2l")]
 position = Vector2(1920, 488)
+
+[node name="Apple10" parent="Collectables" instance=ExtResource("4_2ih2l")]
+position = Vector2(2360, 344)
+
+[node name="Apple11" parent="Collectables" instance=ExtResource("4_2ih2l")]
+position = Vector2(2376, 64)
+
+[node name="Goal" parent="." instance=ExtResource("6_kww1n")]
+position = Vector2(2328, 544)
