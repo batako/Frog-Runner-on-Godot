@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://cygxxng5hn5mk"]
+
+[ext_resource type="Texture2D" uid="uid://dfx003jau2kmp" path="res://assets/images/background/green.png" id="1_ikvg0"]
+[ext_resource type="Script" path="res://main_manu.gd" id="1_yilpo"]
+[ext_resource type="Texture2D" uid="uid://btw0i4see1qoq" path="res://assets/images/main_menu/title-logo.png" id="2_vyeqb"]
+
+[node name="MainManu" type="Node"]
+script = ExtResource("1_yilpo")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ikvg0")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -432.0
+offset_top = -108.0
+offset_right = 146.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_vyeqb")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = 36.0
+offset_right = 50.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "START"

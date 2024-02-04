@@ -603,8 +603,10 @@ texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 2400.0
-offset_bottom = 648.0
+offset_left = -576.0
+offset_top = -320.0
+offset_right = 1824.0
+offset_bottom = 288.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_ou3ko")
@@ -621,6 +623,7 @@ layer_0/tile_data = PackedInt32Array(851967, 524288, 1, 786431, 524288, 1, 72089
 position = Vector2(224, 560)
 
 [node name="Camera2D" type="Camera2D" parent="SceneObject/NinjaFrog"]
+position = Vector2(7.62939e-06, 0)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
@@ -661,3 +664,24 @@ position = Vector2(2376, 64)
 
 [node name="Goal" parent="SceneObject" instance=ExtResource("6_kww1n")]
 position = Vector2(2328, 544)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 352.0
+offset_bottom = 120.0
+
+[node name="PointsLabel" type="Label" parent="UI/Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Points: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
