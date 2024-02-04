@@ -266,6 +266,7 @@ size = Vector2(20, 26)
 script = ExtResource("1_7gg0o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_d3xu3")
 animation = &"fall"
 autoplay = "idle"
